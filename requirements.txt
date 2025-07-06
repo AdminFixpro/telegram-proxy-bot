@@ -1,0 +1,6 @@
+
+telethon
+pyTelegramBotAPI
+requests
+beautifulsoup4
+lxml
