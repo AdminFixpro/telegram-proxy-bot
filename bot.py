@@ -65,16 +65,14 @@ def get_proxies_from_file():
         log("proxies.txt not found")
         return []
 
-def parse_proxy(proxy_link):
-    try:
-        url = proxy_link.replace("tg://", "https://")
-        parsed = urlparse(url)
-        query = parse_qs(parsed.query)
-        server = query.get("server", [None])[0]
-        port = int(query.get("port", [443])[0])
-        return server, port
-    except Exception:
-        return None, None
+def parse_proxy_info(proxy_link):
+    url = proxy_link.replace("tg://", "https://")
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+    server = query.get("server", [""])[0]
+    port = query.get("port", [""])[0]
+    secret = query.get("secret", [""])[0]
+    return server, port, secret
 
 def check_proxy_alive(server, port, timeout=5):
     try:
@@ -94,19 +92,21 @@ def mark_as_sent(proxy_link):
         f.write(proxy_link + "\n")
 
 def post_proxy(proxy_link):
+    server, port, secret = parse_proxy_info(proxy_link)
     caption = (
-        f"🚀 New MTProto Proxy for Telegram 🚀\n\n"
-        f"✅ Fast & secure connection 👇\n"
-        f"👉 {proxy_link}\n\n"
+        f"🔥 New MTProto Proxy Found!\n\n"
+        f"server: `{server}`\n"
+        f"port: `{port}`\n"
+        f"secret: `{secret}`\n\n"
         f"Join our channel: {CHANNEL_USERNAME}"
     )
     markup = telebot.types.InlineKeyboardMarkup()
     markup.add(telebot.types.InlineKeyboardButton("Connect 🔥", url=proxy_link))
     try:
         bot.send_message(CHANNEL_USERNAME, caption, parse_mode="Markdown", reply_markup=markup)
-        log(f"✅ Sent proxy: {proxy_link}")
+        log(f"✅ Sent proxy: {server}:{port}")
         mark_as_sent(proxy_link)
-        print(f"✅ Sent: {proxy_link}")
+        print(f"✅ Sent: {server}:{port}")
     except Exception as e:
         log(f"⚠️ Failed to send: {e}")
         print(f"⚠️ Failed to send: {e}")
