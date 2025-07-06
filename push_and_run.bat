@@ -1,0 +1,6 @@
+@echo off
+echo 🚀 Updating your Telegram Proxy Bot from GitHub...
+git pull
+echo ✅ Done. Running the bot...
+python bot.py
+pause

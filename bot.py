@@ -10,6 +10,7 @@ from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 from scraper import scrape_proxies_from_channels
 from scraper_telethon import scrape_proxies_from_telegram
+from scraper_github import scrape_proxies_from_github_repo
 
 with open("config.json", "r") as f:
     config = json.load(f)
@@ -143,6 +144,9 @@ def main():
 
         scraped_telegram_list = scrape_proxies_from_telegram()
         send_min_proxies_from_source(scraped_telegram_list, min_count=300)
+        
+        github_list = scrape_proxies_from_github_repo("TelegramMessenger/MTProxy")
+        send_min_proxies_from_source(github_list, min_count=300)
 
         print("✅ Finished this cycle. Waiting 180 minutes...")
         time.sleep(10800)
