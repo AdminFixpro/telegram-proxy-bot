@@ -4552,3 +4552,7 @@
 2025-07-06 11:53:02.064021 - ✅ Found 1 proxies in https://raw.githubusercontent.com/TelegramMessenger/MTProxy/master/README.md
 2025-07-06 11:53:02.097873 - ❌ Dead proxy skipped: tg://proxy?server=SERVER_NAME&port=PORT&secret=SECRET`
 2025-07-06 11:53:02.098683 - Only sent 0/300 from this source
+2025-07-06 13:57:45.193592 - 🔍 Gathering proxies...
+2025-07-06 13:57:45.194254 - ⚠️ github_repos.txt not found.
+2025-07-06 13:57:45.194743 - ⚠️ Only sent 0/300 proxies in this cycle.
+2025-07-06 13:57:45.195438 - ✅ Finished this cycle. Waiting 3 hours...
