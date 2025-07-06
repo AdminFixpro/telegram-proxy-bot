@@ -119,7 +119,7 @@ def send_min_proxies_from_source(source_list, min_count=100):
             break
         if already_sent(proxy_link):
             continue
-        server, port = parse_proxy(proxy_link)
+        server, port, secret = parse_proxy_info(proxy_link)
         if server and port and check_proxy_alive(server, port):
             post_proxy(proxy_link)
         else:
