@@ -4324,3 +4324,231 @@
 2025-07-06 11:41:34.611662 - Error fetching from https://newapi.com/api?type=mtproto: HTTPSConnectionPool(host='newapi.com', port=443): Max retries exceeded with url: /api?type=mtproto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A7EAE02AD0>: Failed to resolve 'newapi.com' ([Errno 11001] getaddrinfo failed)"))
 2025-07-06 11:41:34.613249 - Only sent 0/300 from this source
 2025-07-06 11:41:34.615305 - Loaded 197 proxies from file
+2025-07-06 11:49:15.507767 - Bot started.
+2025-07-06 11:49:19.779670 - Fetched 0 proxies from https://mtpro.xyz/api/?type=mtproto
+2025-07-06 11:49:31.816047 - Error fetching from https://proxymtproto.ru/api: HTTPSConnectionPool(host='proxymtproto.ru', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000213C4D11450>: Failed to resolve 'proxymtproto.ru' ([Errno 11001] getaddrinfo failed)"))
+2025-07-06 11:49:37.780739 - Error fetching from https://mtpro.pro/api?type=mtproto: Expecting value: line 4 column 1 (char 3)
+2025-07-06 11:49:49.845579 - Error fetching from https://telegrampx.com/api: HTTPSConnectionPool(host='telegrampx.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000213C4D11F90>: Failed to resolve 'telegrampx.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-06 11:50:01.884725 - Error fetching from https://tgproxies.io/api: HTTPSConnectionPool(host='tgproxies.io', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000213C4D11950>: Failed to resolve 'tgproxies.io' ([Errno 11001] getaddrinfo failed)"))
+2025-07-06 11:50:13.931255 - Error fetching from https://hypermtproto.com/api: HTTPSConnectionPool(host='hypermtproto.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000213C4D116D0>: Failed to resolve 'hypermtproto.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-06 11:50:14.137179 - Error fetching from https://newapi.com/api?type=mtproto: HTTPSConnectionPool(host='newapi.com', port=443): Max retries exceeded with url: /api?type=mtproto (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000213C4D11E50>: Failed to resolve 'newapi.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-06 11:50:14.138303 - Only sent 0/300 from this source
+2025-07-06 11:50:14.140392 - Loaded 197 proxies from file
+2025-07-06 11:50:14.142854 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:14.145042 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:50:14.147116 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:50:14.149454 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:50:26.989109 - ✅ Sent proxy: cldlare.com.nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.digikala.com.www.enamad.ir.www.goole.c.toroeeertgswreqetdgsrwrpi-esoiiisolfnwfsksjvwu-urishklfduiwoehv.my:7443
+2025-07-06 11:50:27.021285 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:27.022611 - ❌ Dead proxy skipped: "port": "7980",
+2025-07-06 11:50:27.023445 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:27.024202 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:27.024899 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:27.025566 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:50:27.026396 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:27.027612 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:27.028726 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:27.029520 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:50:27.030343 - ❌ Dead proxy skipped: "host": "powerful-conection.ddns.net",
+2025-07-06 11:50:27.256857 - ✅ Sent proxy: 88.80.139.97:12
+2025-07-06 11:50:27.272954 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:50:27.275029 - ❌ Dead proxy skipped: "secret": "dd7bd0afc91f3436a168c6c8b62c78688a",
+2025-07-06 11:50:27.276433 - ❌ Dead proxy skipped: "host": "er4.mymtproto.xyz",
+2025-07-06 11:50:27.278694 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:27.280663 - ❌ Dead proxy skipped: ]
+2025-07-06 11:50:27.282088 - ❌ Dead proxy skipped: "host": "chili.mtproxies.com",
+2025-07-06 11:50:27.283227 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:50:27.284741 - ❌ Dead proxy skipped: "host": "ToKhobi.MyFirewall.org",
+2025-07-06 11:50:27.286036 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:27.288488 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:27.290160 - ❌ Dead proxy skipped: "secret": "dd540e3ca27f4612b1e2bdf1229e0a9c63",
+2025-07-06 11:50:27.291217 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:27.836778 - ✅ Sent proxy: 94.130.190.121:812
+2025-07-06 11:50:27.851773 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:27.852828 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:27.853967 - ❌ Dead proxy skipped: "secret": "dddd321456789012345678901234567921",
+2025-07-06 11:50:27.855188 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:27.856397 - ❌ Dead proxy skipped: "host": "new4.bartarin.xyz",
+2025-07-06 11:50:27.857643 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:27.858994 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:50:28.077278 - ✅ Sent proxy: 167.88.160.98:444
+2025-07-06 11:50:28.095880 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:28.097957 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:50:28.100238 - ❌ Dead proxy skipped: "host": "Strong.ChMTP.Info",
+2025-07-06 11:50:28.101964 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:28.103648 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:32.038262 - ✅ Sent proxy: www.jbl-pro.pro.:4045
+2025-07-06 11:50:32.079135 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:32.082522 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:50:32.084444 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:32.086714 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:32.318503 - ✅ Sent proxy: 77.232.40.156:3598
+2025-07-06 11:50:32.358123 - ❌ Dead proxy skipped: "host": "NEWproxyFOUR.n4t.co",
+2025-07-06 11:50:32.360683 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:32.365409 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:32.369054 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:50:32.371264 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:32.373375 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:32.375388 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:32.376562 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:50:32.378647 - ❌ Dead proxy skipped: "host": "jjjvadad.tk",
+2025-07-06 11:50:32.380737 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:32.606894 - ✅ Sent proxy: 95.217.248.202:443
+2025-07-06 11:50:32.838155 - ✅ Sent proxy: 188.34.189.54:4045
+2025-07-06 11:50:32.868761 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:32.869990 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:32.871502 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:32.873058 - ❌ Dead proxy skipped: "port": "82",
+2025-07-06 11:50:33.077016 - ✅ Sent proxy: 45.15.159.66:1
+2025-07-06 11:50:33.099458 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:33.100423 - ❌ Dead proxy skipped: "secret": "dd7bd0afc91f3436a168c6c8b62c78688a",
+2025-07-06 11:50:33.101533 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:38.375363 - ⚠️ Failed to send: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-07-06 11:50:38.388639 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:38.394788 - ❌ Dead proxy skipped: "host": "emperorproxy.dynu.net",
+2025-07-06 11:50:38.397610 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:38.400044 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:38.402546 - ❌ Dead proxy skipped: "secret": "dd8b2394ad2ecef7e607d5f52b31a45768",
+2025-07-06 11:50:38.405794 - ❌ Dead proxy skipped: "host": "god.imtproto.info",
+2025-07-06 11:50:38.409338 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:38.411958 - ❌ Dead proxy skipped: }
+2025-07-06 11:50:38.413748 - ❌ Dead proxy skipped: "host": "papa.mtproxies.com",
+2025-07-06 11:50:38.416229 - ❌ Dead proxy skipped: },
+2025-07-06 11:50:38.418519 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:50:38.420052 - ❌ Dead proxy skipped: "secret": "dddd321456789012345678901234567921",
+2025-07-06 11:50:38.421515 - ❌ Dead proxy skipped: "secret": "dddd321456789012345678901234567921",
+2025-07-06 11:50:38.422938 - ❌ Dead proxy skipped: {
+2025-07-06 11:50:38.424595 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:53.939459 - ⚠️ Failed to send: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2025-07-06 11:50:53.943069 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:50:53.947154 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:53.949473 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:50:53.951812 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:50:53.954363 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:50:53.958381 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:00.118375 - ✅ Sent proxy: cloudflare.com.nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.digikala.com.www.enamad.ir.www.google.com.bmi.again_to_fight.everyone.i_am.the_internet.ackf1rd.lat.:2741
+2025-07-06 11:51:00.145270 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:00.146361 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:00.148000 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:00.149216 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:00.150425 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:00.151605 - ❌ Dead proxy skipped: "secret": "ee54d4920e90309e82dad8a6cc3f4d717473686f702e6972616e63656c6c2e6972",
+2025-07-06 11:51:00.152728 - ❌ Dead proxy skipped: "host": "power.pmtt.xyz",
+2025-07-06 11:51:00.153940 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:51:00.155198 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:00.157384 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:00.158681 - ❌ Dead proxy skipped: "code": "AS",
+2025-07-06 11:51:00.159832 - ❌ Dead proxy skipped: "host": "c.ronaldo.mtproxygo.xyz",
+2025-07-06 11:51:00.448887 - ✅ Sent proxy: 152.42.133.79:443
+2025-07-06 11:51:00.478967 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:00.480256 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:00.481546 - ❌ Dead proxy skipped: "host": "netproxy.dnsup.net",
+2025-07-06 11:51:00.482948 - ❌ Dead proxy skipped: "secret": "00000000000000000000000000000000",
+2025-07-06 11:51:00.484248 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:00.485883 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:00.487282 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:51:00.488539 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:00.492538 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:00.493635 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:00.494822 - ❌ Dead proxy skipped: "secret": "ddcce326a3387761c8677a6526228206c2",
+2025-07-06 11:51:00.495888 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:00.496851 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:00.497747 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:00.498683 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:51:00.499612 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:00.500668 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:51:12.553662 - ❌ Dead proxy skipped: https://t.me/proxy?server=cloudflare.com.nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.digikala.com.www.enamad.ir.www.google.com.again_to_fight.everyone.i_am.the_internet.works-shops.info.&port=7557&secret=7gggggggggggggggggggggh0cmFuc2xhdGUuZ29v
+2025-07-06 11:51:12.556796 - ❌ Dead proxy skipped: "secret": "dddd123456789012345678901234567890",
+2025-07-06 11:51:12.559022 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:12.562537 - ❌ Dead proxy skipped: "host": "Matrix.For-All.tk",
+2025-07-06 11:51:12.564822 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:12.567313 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:12.570490 - ❌ Dead proxy skipped: "port": "88",
+2025-07-06 11:51:12.575015 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:12.578025 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:12.580461 - ❌ Dead proxy skipped: "host": "proxy.yahosein.xyz",
+2025-07-06 11:51:12.582445 - ❌ Dead proxy skipped: "secret": "dd9b21c91cce87c0d0ea222962ed90a4c7",
+2025-07-06 11:51:12.798025 - ✅ Sent proxy: 85.204.22.151:12
+2025-07-06 11:51:12.830545 - ❌ Dead proxy skipped: "port": "88",
+2025-07-06 11:51:12.831746 - ❌ Dead proxy skipped: "secret": "dd112233445566778899aabbccddeeff",
+2025-07-06 11:51:12.833062 - ❌ Dead proxy skipped: "port": "80",
+2025-07-06 11:51:13.048450 - ✅ Sent proxy: 140.233.187.79:888
+2025-07-06 11:51:13.075384 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:51:13.076678 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:51:13.077734 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:13.078851 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:51:13.617365 - ✅ Sent proxy: 152.42.133.79:443
+2025-07-06 11:51:13.643772 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:13.644831 - ❌ Dead proxy skipped: "port": "55",
+2025-07-06 11:51:13.646234 - ❌ Dead proxy skipped: "host": "er5.mymtproto.xyz",
+2025-07-06 11:51:13.647402 - ❌ Dead proxy skipped: "secret": "ee54d4920e90309e82dad8a6cc3f4d717473686f702e6972616e63656c6c2e6972",
+2025-07-06 11:51:13.648780 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:13.649872 - ❌ Dead proxy skipped: "host": "real.urproxy.ml",
+2025-07-06 11:51:13.650856 - ❌ Dead proxy skipped: "host": "Shooter.ChMTP.Info",
+2025-07-06 11:51:13.651742 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:13.652642 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:13.653576 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:13.654688 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:13.656123 - ❌ Dead proxy skipped: "secret": "dd7bd0afc91f3436a168c6c8b62c78688a",
+2025-07-06 11:51:13.658051 - ❌ Dead proxy skipped: "secret": "ddcde326a3659891c8307a6526228206c1",
+2025-07-06 11:51:13.659604 - ❌ Dead proxy skipped: [
+2025-07-06 11:51:13.660638 - ❌ Dead proxy skipped: "host": "zz.proxygo.xyz",
+2025-07-06 11:51:13.662932 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:13.664228 - ❌ Dead proxy skipped: "code": "AS",
+2025-07-06 11:51:13.665268 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:13.666424 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:13.667535 - ❌ Dead proxy skipped: "port": "88",
+2025-07-06 11:51:13.668481 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:51:13.669421 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:13.670337 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:25.699379 - ❌ Dead proxy skipped: https://t.me/proxy?server=mci.ir.apt-centos.org.&port=888&secret=eeRighJJvXrFGRMCIMJdCQ
+2025-07-06 11:51:25.702614 - ❌ Dead proxy skipped: "host": "hos3.n4t.co",
+2025-07-06 11:51:25.707056 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:25.709400 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:25.711612 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:25.714038 - ❌ Dead proxy skipped: "code": "EU",
+2025-07-06 11:51:25.718889 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:25.721647 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:25.723470 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:25.724724 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:25.725900 - ❌ Dead proxy skipped: "host": "delnia.mtproxies.com",
+2025-07-06 11:51:25.727123 - ❌ Dead proxy skipped: "enabled": true
+2025-07-06 11:51:25.728246 - ❌ Dead proxy skipped: "port": "443",
+2025-07-06 11:51:25.729458 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:37.768403 - ❌ Dead proxy skipped: https://t.me/proxy?server=cloudflare.com.nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.digikala.com.www.enamad.ir.www.google.com.again_to_fight.everyone.i_am.the_internet.anderanik-01.info&port=115&secret=7ggggggggggggggggggggghzYW5qZXNoLmdvbw
+2025-07-06 11:51:37.771016 - ❌ Dead proxy skipped: "port": "8001",
+2025-07-06 11:51:37.774222 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:37.777503 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:37.779992 - ❌ Dead proxy skipped: "host": "drproxyfree.dnsup.net",
+2025-07-06 11:51:37.782856 - ❌ Dead proxy skipped: "host": "v79.Bestmt.info",
+2025-07-06 11:51:37.787434 - ❌ Dead proxy skipped: },
+2025-07-06 11:51:37.789910 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:37.792165 - ❌ Dead proxy skipped: {
+2025-07-06 11:51:37.997356 - ✅ Sent proxy: 5.75.211.103:9090
+2025-07-06 11:51:38.022397 - ❌ Dead proxy skipped: "code": "NA",
+2025-07-06 11:51:38.023422 - ❌ Dead proxy skipped: "secret": "dd00000000000000000000000000000000",
+2025-07-06 11:51:38.024619 - ❌ Dead proxy skipped: "secret": "ee54d4920e90309e82dad8a6cc3f4d71746368696c692e6d7470726f786965732e636f6d",
+2025-07-06 11:51:38.025624 - ❌ Dead proxy skipped: "host": "7etw2xl.TurboMT.live",
+2025-07-06 11:51:38.026689 - ❌ Dead proxy skipped: "code": "AS",
+2025-07-06 11:51:38.027772 - ❌ Dead proxy skipped: "secret": "dddd321456789012345678901234567921",
+2025-07-06 11:51:38.028383 - Only sent 0/300 from this source
+2025-07-06 11:52:01.193483 - ❌ Dead proxy skipped: tg://proxy?server=SERVER_NAME&port=PORT&secret=SECRET
+2025-07-06 11:52:01.196437 - ❌ Dead proxy skipped: tg://proxy?server=SERVER_NAME\u0026amp;port=PORT\u0026amp;secret=SECRET\u003c/code\u003e
+2025-07-06 11:52:01.201413 - Only sent 0/300 from this source
+2025-07-06 11:52:23.800342 - ❌ Dead proxy skipped: tg://proxy?server=proxy.hellrobot.me&port=6969&secret=d41d8cd98f00b204e9800998ecf8427e
+2025-07-06 11:52:24.058604 - ✅ Sent proxy: 188.245.144.93:443
+2025-07-06 11:52:24.346262 - ✅ Sent proxy: 91.99.182.38:70
+2025-07-06 11:52:24.905905 - ✅ Sent proxy: 91.99.146.81:70
+2025-07-06 11:52:36.957465 - ❌ Dead proxy skipped: tg://proxy?server=akgov.tgproxy.network&port=8443&secret=726564736869656c6476706e2e636f6d
+2025-07-06 11:52:37.210519 - ✅ Sent proxy: 91.99.178.113:70
+2025-07-06 11:52:43.227858 - ✅ Sent proxy: proxy.digitalresistance.dog:443
+2025-07-06 11:52:43.477013 - ✅ Sent proxy: 109.169.71.41:18580
+2025-07-06 11:52:44.085949 - ✅ Sent proxy: 91.99.177.30:70
+2025-07-06 11:52:44.647873 - ✅ Sent proxy: 37.49.224.207:8443
+2025-07-06 11:52:56.712648 - ❌ Dead proxy skipped: tg://proxy?server=t.lebster.me&port=6666&secret=4b3e3c2f99046f92a61bab6775848577
+2025-07-06 11:52:57.247992 - ✅ Sent proxy: 91.99.179.31:70
+2025-07-06 11:52:57.251051 - Only sent 0/300 from this source
+2025-07-06 11:52:59.797158 - ❌ Failed to fetch https://raw.githubusercontent.com/TelegramMessenger/MTProxy/main/README.md, status 404
+2025-07-06 11:53:02.064021 - ✅ Found 1 proxies in https://raw.githubusercontent.com/TelegramMessenger/MTProxy/master/README.md
+2025-07-06 11:53:02.097873 - ❌ Dead proxy skipped: tg://proxy?server=SERVER_NAME&port=PORT&secret=SECRET`
+2025-07-06 11:53:02.098683 - Only sent 0/300 from this source
