@@ -1,29 +1,30 @@
-import telebot
-from telebot import types
+from telethon import TelegramClient, events
+import re, json, time, socket
 import requests
-import socket
-import time
-import re
-import json
-from datetime import datetime
-from urllib.parse import urlparse, parse_qs
 from scraper_github import scrape_proxies_from_all_github
 
-# Load config
 with open("config.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 
-TOKEN = config["TOKEN"]
-CHANNEL_USERNAME = config["CHANNEL_USERNAME"]
-GROUP_ID = config["GROUP_ID"]
+api_id = config["API_ID"]
+api_hash = config["API_HASH"]
+channel_username = config["CHANNEL_USERNAME"]
+group_id = config["GROUP_ID"]
 
-bot = telebot.TeleBot(TOKEN)
+client = TelegramClient('telethon_session', api_id, api_hash)
+
+proxy_sources = [
+    "https://mtpro.xyz/api/?type=mtproto",
+    "https://proxymtproto.ru/api",
+    "https://mtpro.pro/api?type=mtproto",
+]
 
 def log(message):
     with open("log.txt", "a", encoding="utf-8") as f:
-        f.write(f"{datetime.now()} - {message}\n")
+        f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} - {message}\n")
 
 def parse_proxy_info(proxy_link):
+    from urllib.parse import urlparse, parse_qs
     url = proxy_link.replace("tg://", "https://")
     parsed = urlparse(url)
     query = parse_qs(parsed.query)
@@ -43,13 +44,11 @@ def check_proxy_alive(server, port, timeout=5):
         return False
 
 def extract_proxy_from_text(text):
-    # پیدا کردن لینک tg://proxy
-    pattern_link = re.compile(r"(tg://proxy\?[^ \"'\n<]+)")
+    pattern_link = re.compile(r"(tg://proxy\\?[^ \"'\\n<]+)")
     matches = pattern_link.findall(text)
     if matches:
         return matches
 
-    # پیدا کردن server / port / secret جدا
     pattern_server = re.search(r"server[:= ]+([\w\.\-]+)", text, re.I)
     pattern_port = re.search(r"port[:= ]+(\d+)", text, re.I)
     pattern_secret = re.search(r"secret[:= ]+([a-fA-F0-9]+)", text, re.I)
@@ -61,67 +60,76 @@ def extract_proxy_from_text(text):
 
     return []
 
-def post_proxy(proxy_link):
+async def send_proxy(proxy_link):
     server, port, secret = parse_proxy_info(proxy_link)
-    caption = (
+    message = (
         f"🔥 New MTProto Proxy Found!\n\n"
         f"server: `{server}`\n"
         f"port: `{port}`\n"
-        f"secret: `{secret}`\n\n"
-        f"Join our channel: {CHANNEL_USERNAME}"
+        f"secret: `{secret}`"
     )
-    markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton("Connect 🔥", url=proxy_link))
-    try:
-        bot.send_message(CHANNEL_USERNAME, caption, parse_mode="Markdown", reply_markup=markup)
-        log(f"✅ Sent proxy: {server}:{port}")
-    except Exception as e:
-        log(f"⚠️ Failed to send proxy: {e}")
+    await client.send_message(channel_username, message, parse_mode="markdown", buttons=[[
+        {"text": "Connect 🔥", "url": proxy_link}
+    ]])
 
-def send_min_proxies_from_source(proxy_list, min_count=300):
+async def process_proxies(proxy_list, min_count=300):
     sent = 0
-    for proxy_link in proxy_list:
-        server, port, secret = parse_proxy_info(proxy_link)
-        if server and port and secret:
-            if check_proxy_alive(server, port):
-                post_proxy(proxy_link)
-                sent += 1
-                time.sleep(1)
-            else:
-                log(f"❌ Dead proxy skipped: {server}:{port}")
+    with open("sent_proxies.txt", "a+", encoding="utf-8") as f:
+        f.seek(0)
+        sent_before = set(line.strip() for line in f.readlines())
+
+    for proxy in proxy_list:
+        if proxy in sent_before:
+            continue
+        server, port, secret = parse_proxy_info(proxy)
+        if server and port and secret and check_proxy_alive(server, port):
+            await send_proxy(proxy)
+            with open("sent_proxies.txt", "a", encoding="utf-8") as f:
+                f.write(proxy + "\n")
+            log(f"✅ Sent proxy: {server}:{port}")
+            sent += 1
+            time.sleep(1)
         if sent >= min_count:
             break
-    if sent < min_count:
-        log(f"⚠️ Only sent {sent}/{min_count} proxies in this cycle.")
+    log(f"✅ Cycle finished: Sent {sent}/{min_count}")
 
-@bot.message_handler(func=lambda message: True, content_types=['text'])
-def handle_group_message(message):
-    if str(message.chat.id) == str(GROUP_ID):
-        proxies = extract_proxy_from_text(message.text)
-        for proxy in proxies:
-            server, port, secret = parse_proxy_info(proxy)
-            if server and port and secret and check_proxy_alive(server, port):
-                post_proxy(proxy)
-
-def main():
+async def scraping_cycle():
     while True:
         log("🔍 Gathering proxies...")
+        proxies_api = []
+        for url in proxy_sources:
+            try:
+                resp = requests.get(url, timeout=10)
+                data = resp.json()
+                proxies = [item['link'] for item in data if 'link' in item]
+                proxies_api.extend(proxies)
+                log(f"✅ Fetched {len(proxies)} from {url}")
+            except Exception as e:
+                log(f"⚠️ Error fetching from {url}: {e}")
+        proxies_github = scrape_proxies_from_all_github()
+        all_proxies = list(set(proxies_api + proxies_github))
+        await process_proxies(all_proxies, min_count=300)
+        log("✅ Waiting 3 hours...")
+        time.sleep(10800)
 
-        # از github
-        github_list = scrape_proxies_from_all_github()
+@client.on(events.NewMessage(chats=group_id))
+async def handler(event):
+    text = event.message.message
+    proxies = extract_proxy_from_text(text)
+    for proxy in proxies:
+        server, port, secret = parse_proxy_info(proxy)
+        if server and port and secret and check_proxy_alive(server, port):
+            await send_proxy(proxy)
+            with open("sent_proxies.txt", "a", encoding="utf-8") as f:
+                f.write(proxy + "\n")
+            log(f"✅ Sent proxy from group: {server}:{port}")
 
-        # میتونی scraper های دیگه هم اینجا اضافه کنی
-        all_proxies = github_list
-
-        # remove duplicates
-        all_proxies = list(set(all_proxies))
-        send_min_proxies_from_source(all_proxies, min_count=300)
-
-        log("✅ Finished this cycle. Waiting 3 hours...")
-        time.sleep(10800)  # 3 hours
+async def main():
+    await client.start()
+    client.loop.create_task(scraping_cycle())
+    await client.run_until_disconnected()
 
 if __name__ == "__main__":
-    print("🚀 Bot started...")
-    from threading import Thread
-    Thread(target=main).start()
-    bot.polling(none_stop=True)
+    print("🚀 Telethon bot started... listening and scraping.")
+    import asyncio
+    asyncio.run(main())
